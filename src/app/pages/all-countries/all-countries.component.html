@@ -1,0 +1,15 @@
+<div class="header">
+  <h1>All EU Countries </h1>
+  <div class="form">
+    <button (click)="resetPage()">RESET</button>
+    <input [(ngModel)]="searchText" placeholder="search..." />
+  </div>
+</div>
+<div class="countries-container" >
+  <mat-card *ngFor="let item of this.countriesService.allCountriesArrMoke | cloneArr : searchText " class="card-warp">
+    <button (click)="removeCountry(item.countryName)">X</button>
+    <div>{{item.countryName}}</div>
+    <div class="flag">{{item.countrySrc}}</div>
+  </mat-card>
+</div>
+

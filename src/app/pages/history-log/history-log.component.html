@@ -1,0 +1,18 @@
+<div class="logs-container">
+  <h1>History Logs </h1>
+  <!-- <div *ngFor="let item of logsArr; let i = index" class="logs-row">
+    <div>Search no' {{i+1}}</div>
+    <div>{{item}}</div>
+  </div> -->
+  <div class="table-warp">
+    <table>
+      <tr *ngFor="let item of logsArr; let i = index" class="demoObject">
+        <th class="index">{{i+1}}</th>
+        <td style="width: 30%;">
+          {{item.countryName}}
+        </td>
+        <td>{{item.countrySrc}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

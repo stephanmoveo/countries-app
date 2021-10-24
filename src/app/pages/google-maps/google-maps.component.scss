@@ -1,0 +1,60 @@
+$inputWitdh:200px;
+
+.maps-container {
+  position: relative;
+  top: 30px;
+
+  .pac-container {
+    background-color: #eff8fe;
+    box-shadow: none;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0px 0 20px 0;
+    position: relative !important;
+    z-index: 0 !important;
+
+    .map-form {
+      display: inline-grid;
+
+      input,
+      button {
+        width: $inputWitdh;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        background-color: #c4efff;
+        margin: 5px;
+        outline: 0;
+      }
+
+      button:hover {
+        background-color: #75d5f8;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+    }
+  }
+
+
+
+  h1 {
+    text-align: center;
+  }
+
+  .map-warp {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+#map {
+  width: 60%;
+  height: 400px;
+}

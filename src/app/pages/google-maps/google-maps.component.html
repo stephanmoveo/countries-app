@@ -1,0 +1,19 @@
+<div class="maps-container">
+  <h1>Google-maps</h1>
+
+  <div id="pac-container" class="pac-container">
+    <div class="map-form">
+      <button (click)="this.mapservice.calcRoute()">Caculate</button>
+      <input id="pac-input" type="text" placeholder="Enter a location" />
+    </div>
+  </div>
+  <div class="map-warp">
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+  </div>
+
+</div>

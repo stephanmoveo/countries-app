@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #eff8fe;
+  text-align: center; 
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 15%;
+
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      color: blue;
+      margin: 5px 30px;
+    }
+  }
+
+
+
+  a:hover {
+    opacity: 0.7;
+  }
+}
