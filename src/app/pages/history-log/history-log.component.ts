@@ -9,8 +9,6 @@ export class HistoryLogComponent implements OnInit {
 
   constructor() { }
 
-  columnsToDisplay = ['userName', 'age'];
-
   logsArr = JSON.parse(localStorage.getItem("logs") as any) 
 
   ngOnInit(): void {

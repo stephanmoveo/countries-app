@@ -26,8 +26,7 @@ export class GooglemapsService {
         mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"],
       }
     });
-    console.log(this.map);
-
+    
     this.directionsRenderer.setMap(this.map)
     const moveoMarker = new google.maps.Marker({
       position: work,
